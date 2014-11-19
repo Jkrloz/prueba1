@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Life Counter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="scoreP1" >20</string>
+    <string name="scoreP2" >20</string>
+    <string name="newGame" >Reiniciar \nel juego</string>
+    <string name="gane">Gané!</string>
+
+</resources>

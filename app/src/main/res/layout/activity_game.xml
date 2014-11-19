@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="+5"
+                    android:id="@+id/buttonPlus5P1"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:rotation="180"
+                    android:onClick="updateLife"
+                    android:typeface="monospace" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="+1"
+                    android:id="@+id/buttonPlus1P1"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:rotation="180"
+                    android:onClick="updateLife"
+                    android:typeface="monospace" />
+
+
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="win"
+                    android:text="@string/gane"
+                    android:rotation="180"
+                    android:id="@+id/p1w"/>
+                <TextView
+                    android:text="@string/scoreP1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="90sp"
+                    android:layout_weight="3"
+                    android:id="@+id/player1"
+                    android:typeface="monospace"
+                    android:rotation="180"
+
+                    android:textIsSelectable="false">
+
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Susana"
+                    android:rotation="180"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+
+                    android:textSize="20sp"/>
+
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="-5"
+                    android:id="@+id/buttonMinus5P1"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:rotation="180"
+                    android:onClick="updateLife"
+                    android:typeface="monospace" />
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="-1"
+                    android:id="@+id/buttonMinus1P1"
+                    android:layout_weight="1"
+                    android:textSize="30sp"
+                    android:rotation="180"
+                    android:onClick="updateLife"
+                    android:typeface="monospace" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    <Button android:id="@+id/resetGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/newGame"
+            android:textSize="25sp"
+            android:layout_weight="0.3"
+            android:onClick="reset"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="-1"
+                android:id="@+id/buttonMinus1P2"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:onClick="updateLife"
+
+                android:typeface="monospace" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="-5"
+                android:id="@+id/buttonMinus5P2"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:onClick="updateLife"
+
+                android:typeface="monospace" />
+
+
+
+            </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Juanki"
+
+                android:layout_weight="1"
+                android:gravity="center"
+
+
+                android:textSize="20sp"/>
+            <TextView
+                android:text="@string/scoreP2"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="90sp"
+                android:layout_weight="3"
+                android:id="@+id/player2"
+                android:typeface="monospace"
+
+
+                android:textIsSelectable="false">
+
+
+            </TextView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="win"
+                android:id="@+id/p2w"
+                android:text="@string/gane"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="+1"
+                android:id="@+id/buttonPlus1P2"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:onClick="updateLife"
+                android:typeface="monospace" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="+5"
+                android:id="@+id/buttonPlus5P2"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:onClick="updateLife"
+                android:typeface="monospace" />
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
